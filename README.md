@@ -1,4 +1,3 @@
-
 Sistema de registro de infracciones de tránsito
 
 Descripción general:
@@ -9,7 +8,8 @@ Autor: Lorenzo Ricci
 Fecha: 11/06/2024
 Repositorio de Github:
 https://github.com/lofari/PythonChallenge/
-Repositorio de DockerHub: https://hub.docker.com/repository/docker/lorenzoricci/django-docker/
+Repositorio de DockerHub: 
+https://hub.docker.com/repository/docker/lorenzoricci/django-docker/
 
 Propósito:
 
@@ -67,6 +67,7 @@ Para los endpoints que requieran autenticación se deberá pedir un token de acc
 Una vez levantado el proyecto puede encontrar en la siguiente url una interfaz gráfica generada mediante un esquema OpenApi con las especificaciones de todas las rutas dentro de la app y podrá también ejecutar los request:
 http://localhost:8000/api/schema/docs
 
+
 Propuesta Arquitectura AWS
 Compute Services: EC2
 Database: RDS (Relational Database Service)
@@ -76,9 +77,10 @@ Monitoring and Logging: CloudWatch
 Networking: VPC
 DNS Routing: Route53
 
-Justificación de Elecciones:
+Justificación:
 EC2 y RDS: Brindan escalabilidad y flexibilidad para manejar cargas de trabajo variables, y una base de datos relacional gestionada para almacenar datos críticos.
 API Gateway: Permite configurar políticas de autenticación y autorización, facilitando la exposición segura de los endpoints de la API.
 IAM y CloudWatch: Garantizan la integridad y el rendimiento del sistema mediante seguridad granular basada en roles y monitoreo avanzado.
 Route53: DNS routing escalable y de alta disponibilidad
 VPC: Seguridad
+
